@@ -51,7 +51,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Sep 3, 2019 09:58:29 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Sep 4, 2019 10:11:14 PM</span>
 				</a>
 			</li>
 			<li>
@@ -142,7 +142,7 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -157,7 +157,7 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>10</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>25</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -176,13 +176,13 @@
 				
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>YO DO NOTE</span>
-						<span class='test-time'>Sep 3, 2019 09:58:30 PM</span>
+						<span class='test-name'>Login Test Case</span>
+						<span class='test-time'>Sep 4, 2019 10:11:14 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 42s+373ms</span>
+	<span class='duration right label'>0h 0m 23s+333ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Login as an Admin</span>
@@ -231,7 +231,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='8' status='pass'>
-	<span class='duration right label'>0h 0m 26s+86ms</span>
+	<span class='duration right label'>0h 0m 11s+405ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Login with a non-existing account</span>
@@ -274,6 +274,144 @@
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then user is prompted for an error</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='14' status='pass'>
+	<span class='duration right label'>0h 0m 44s+177ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Forgot password situation</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='15' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given user is on homepage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='16' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When user navigates to Login Page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='17' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And user enters username "syncjohn.qa4@gmail.com"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='18' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And user enters password "123N"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='19' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And user forgot password "test_merchant"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='20' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And user fixes password "merch@123"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='21' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When user navigates to Login Page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='22' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And user enters username "syncjohn.qa4@gmail.com"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='23' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And user enters password "merch@123"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='24' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then success message is displayed "Azura"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='25' status='pass'>
+	<span class='duration right label'>0h 0m 13s+996ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Customer logs in</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='26' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given user is on homepage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='27' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When user navigates to Login Register Page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='28' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And user enters username "test_user" and password "merch@123"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='29' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And user logs in and wait for confirmation</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='30' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then user is confirm to arrived in the user profile</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -322,31 +460,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>10</div>
+					<div class='panel-lead'>25</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sep 3, 2019 09:58:29 PM</div>
+					<div class='panel-lead'>Sep 4, 2019 10:11:14 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sep 3, 2019 09:59:40 PM</div>
+			 		<div class='panel-lead'>Sep 4, 2019 10:12:52 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>70,600ms</div>
+					<div class='panel-lead'>98,635ms</div>
 				</div>
 			</div>
 		</div>
@@ -367,7 +505,7 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 2,
+				passChild: 4,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -376,7 +514,7 @@
 				infoChild: 0,
 				exceptionsChild: 0,
 				
-				passGrandChild: 10,
+				passGrandChild: 25,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
